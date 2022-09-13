@@ -1,0 +1,55 @@
+div.nav {
+    height: 60px;
+    background-color: rgb(187, 114, 25);
+    padding: 0;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    border: 0;
+}
+.nav a {
+    display:inline-block;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    align-items: center;
+    
+
+}
+td .icon {
+    width: 20px;
+    height: 20px;
+    text-indent: 0;
+}
+
+td #description {
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    font-family: "microsoft yahei";
+    text-indent: 2em;
+    background-image: url(https://image.shutterstock.com/image-photo/shoemakers-work-desk-tools-leather-600w-1186134823.jpg);
+    display: block;
+}
+body {
+    background-color: bisque;
+}
+.photo {
+    display: inline-block;
+    height: 500px;
+    width: 450px;
+    padding: 0;
+    
+}
+#contact {
+    position: top left;
+    padding: left top;
+}
+#pageA {
+   
+    background-repeat: no-repeat;
+}
