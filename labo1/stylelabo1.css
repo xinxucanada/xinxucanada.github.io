@@ -1,4 +1,4 @@
-div.nav {
+nav.nav {
     height: 60px;
     background-color: rgb(187, 114, 25);
     padding: 0;
@@ -20,10 +20,12 @@ div.nav {
     
 
 }
-td .icon {
-    width: 20px;
-    height: 20px;
+td .iconcontact {
+    width: 30px;
+    height: 30px;
     text-indent: 0;
+    line-height: 30px;
+    position: left center;
 }
 
 td #description {
@@ -32,11 +34,13 @@ td #description {
     font-style: italic;
     font-family: "microsoft yahei";
     text-indent: 2em;
-    background-image: url(https://image.shutterstock.com/image-photo/shoemakers-work-desk-tools-leather-600w-1186134823.jpg);
+    /* background-image: url(https://image.shutterstock.com/image-photo/shoemakers-work-desk-tools-leather-600w-1186134823.jpg); */
     display: block;
 }
 body {
     background-color: bisque;
+    margin: 0;
+    background-image: url(images/paper-ge9c88a51a_1920.jpg);
 }
 .photo {
     display: inline-block;
@@ -48,8 +52,9 @@ body {
 #contact {
     position: top left;
     padding: left top;
+    line-height: 35px;
 }
 #pageA {
-   
+    
     background-repeat: no-repeat;
 }
