@@ -80,6 +80,7 @@ body {
     height: 600px;
     background-color: white;
     margin: 0 auto;
+    /* border: 1px solid grey; */
     
 }
 .connecter h2 {
@@ -91,16 +92,19 @@ body {
     line-height: 60px;
 }
 .connecter .left {
-    display: inline-block;
+    float: left;
+    /* display: inline-block; */
     width: 250px;
-    height: 540px;
-    /* border-right: 1px solid rgba(0,0,0,0.3); */
-    padding: 0px 50px 0px 200px;
+    height: 490px;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding: 50px 50px 0px 200px;
     margin: 0;
     text-align: center;
+    /* border: 1px solid grey ; */
 }
 .connecter .right {
-    display: inline-block;
+    float: left;
+    /* display: inline-block; */
     width: 244px;
     height: 340px;
     /* border-left: 1px solid rgba(0,0,0,0.3); */
@@ -112,19 +116,20 @@ body {
     text-align: left;
     border: 1px solid transparent ;
     line-height: 20px;
+    margin-top: 20px;
 }
 .right h3 {
     font-weight: 400;
-    font-style: 12px;
+    /* font-style: 12px; */
     /* line-height: 12px; */
-    font-size: 14;
+    font-size: 20px;
     border: 0;
-    text-align: left; */
+    text-align: left; 
 }
 .left h4, input, a {
     text-decoration: none;
     color: grey;
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 .right h4, input, a {
@@ -141,11 +146,13 @@ body {
     height: 18px;
     width: 180px;
     padding: auto;
+    
 }
 .left .button:hover, .right .button:hover {
     background-color: rgb(180, 187, 231);
 }
 .left a {
+    margin-top: 20px;
     font-size: 12px;
 }
 .left a:hover {
