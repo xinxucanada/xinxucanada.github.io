@@ -222,7 +222,7 @@ body {
 .caisse {
     width: 1000px;
     height: 200px;
-    background-color: #fff;
+    background-color: rgb(207, 162, 65);
     margin: 0 auto;
 }
 
@@ -230,7 +230,7 @@ body {
     float: left;
     width: 50%;
     height: 200px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     text-align: center;
 
 }
@@ -241,6 +241,7 @@ body {
     border-top: 1px solid grey;
 }
 .payment h4 {
+    margin-top: 10px;
     text-align-last: left;
     text-indent: 5em;
 }
