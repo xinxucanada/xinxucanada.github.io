@@ -260,3 +260,12 @@ body {
 .confirm:hover {
     background-color: rgb(45, 45, 75);
 }
+
+button.panier {
+    background-color: rgb(212, 202, 224);
+    margin-left: 5px;
+}
+
+button.panier:hover {
+    background-color: rgb(179, 210, 228);
+}
