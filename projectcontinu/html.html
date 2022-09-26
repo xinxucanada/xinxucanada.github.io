@@ -129,20 +129,38 @@
     </ul>
     <h1>Un tableau HTML <a href="#haut">returne en haut</a></h1>
     <table id="tableauhtml" align="center" border="2" width="900" height="900" cellspacing="0">
+        <colgroup>
+            <col style="background-color: red;">
+            <col style="background-color: green; ">
+            <col style="background-color: yellow;">
+        </colgroup>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td>
+                <ol>
+                    <li>un</li>
+                    <li>deux</li>
+                    <li>trois</li>
+                </ol>
+            </td>
+            <td><textarea name="" id="" cols="30" rows="10" >dit quelque chose ici</textarea></td>
+            <td><h1> h1 très grand</h1></td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td style="background-color: skyblue; color:blueviolet">
+                <input type="email">courriel <br><br><br>
+                <input type="password" name="" id="">mot de passe
+            </td>
+            <td style="background-color: white;">5<img src="https://assets.website-files.com/5dd6eaf6a03136a90d4ac1fb/5dd6eaf6a031366aac4ac71b_5c792336595105865a8eb6ff_image-passportphotos.jpeg" alt="" width="300" height="300"></td>
+            <td style="background-color: rgba(54, 45, 45, 0.7); color:aliceblue;">
+                <input type="radio"  name="pay">comptant <br>
+                <input type="radio"  name="pay">débit <br>
+                <input type="radio"  name="pay">crédit
+            </td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
+            <td>c'est un bouton magique <button width="100px">magique</button></td>
+            <td><a href="#">allez à la page suivante</a></td>
+            <td>fini?<input type="checkbox" checked="checked"></td>
         </tr>
     </table>
 
