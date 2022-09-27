@@ -5,76 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <style>
-   
-        a {
-            display: inline-block;
-            width: 120px;
-            height: 58px;
-            text-align: center;
-            line-height: 48px;
-            color:#fff;
-            text-decoration: none;
-            /* background-color: rgba(0,0,0,0.5); */
-        }
-        .nav .html {
-            background-image: url(images/bg1.png);
-        }
-        .nav .html:hover {
-            background-image: url(images/bg11.png);
-        }
-        .nav .css {
-            background-image: url(images/bg2.png);
-        }
-        .nav .css:hover{
-            background-image: url(images/bg11.png);
-        }
-        .nav .js {
-            background-image: url(images/bg1.png);
-        }
-        .nav .js:hover {
-            background-image: url(images/bg11.png);
-        }
-        .nav .webapi {
-            background-image: url(images/bg1.png);
-        }
-        .nav .webapi:hover {
-            background-image: url(images/bg11.png);
-        }
-        #idx {
-            color: unset;
-            text-decoration: unset;
-        }
-        
-      
-    </style>
-    
+    <link rel="stylesheet" href="stylesheet.css">
+
 </head>
 <body>
-    <div class="nav" ><center>
+    <div class="nav" >
         <a href="html.html" class="html" >HTML</a>
         <a href="css.html" class="css">CSS</a>
         <a href="javaScript.html" class="js">Javascript</a>
         <a href="webapi.html" class="webapi">Web API</a>
         <a href="index.html" id="idx" >Page d'accueil</a>
-    </center>
+    
     </div>
     <p></p>
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+    <table class="tableau">
+        <colgroup>
+            <col>
+            <col class="midcol">
+            <col>
+        </colgroup>
+        <tr class="uprow">
+            <td>
+                <input type="text" name="" id=""><br> input défaut
+            </td>
+            <td><button>défaut</button></td>
+            <td>link défaut <br><a href="http://www.google.ca">google</a></td>
         </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+        <tr class="midrow">
+            <td>
+                <input type="text"><br>input structure par classe
+            </td>
+            <td><button>classe</button></td>
+            <td>link classe <br><a href="http://www.google.ca">google</a> </td>
         </tr>
-        <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
+        <tr class="downrow">
+            <td>
+                <select name="choix" id="" value="choisissez">
+                    <option value="choix1">choix1</option>
+                    <option value="choix2">choix2</option>
+                    <option value="choix3">choix3</option>
+                </select>
+            </td>
+            <td id="bottomcentre">bouton <span id="line-through">classe</span> par ID <br><button>id</button></td>
+            <td id="bottomright">link par <span id="line-through">classe</span> ID <br><a href="http://www.google.ca">google</a></td>
         </tr>
     </table>
 </body>
