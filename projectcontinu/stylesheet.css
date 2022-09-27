@@ -17,7 +17,7 @@ div.nav {
     margin: 0 auto;
 }
 .nav .html {
-    background-image: url(images/bg2.png);
+    background-image: url(images/bg1.png);
 }
 .nav .html:hover {
     background-image: url(images/bg11.png);
