@@ -128,3 +128,14 @@ td:hover {
 #line-through {
     text-decoration: line-through;
 }
+
+#js table {
+    display: block;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
+}
+#js td {
+    width: 195px;
+    height: 30px;
+}

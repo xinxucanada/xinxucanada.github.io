@@ -13,7 +13,7 @@
         }
     </style>
 </head>
-<body>
+<body id="js">
     <div class="nav" >
         <a href="html.html" class="html" >HTML</a>
         <a href="css.html" class="css">CSS</a>
@@ -22,6 +22,80 @@
         <a href="index.html" id="idx" >Page d'accueil</a>
     
     </div>
-    <h1>«En construction»</h1>
+    <table border="1px">
+        <tr>
+            <th>IMC</th>
+            <th id="rlt">0</th>
+        </tr>
+        <tr class="entree">
+            <th>Poids (kgs)</th>
+            <th>Taille (m)</th>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+ 
+        
+    </table>
+    <button>Calculer</button>
+    <select id="mySelect" onchange="myFunction()">
+        <option value="m">le système métrique</option>
+        <option value="i">le système impérial</option>
+    </select>
+
+    <script>
+        let btn = document.querySelector('button');
+        let tds = document.querySelectorAll('input');
+        let rlt = document.querySelector('#rlt');
+        
+        
+
+        let sys = document.querySelector(".entree").querySelectorAll("th");
+        // console.log(i);
+        
+        function myFunction() {
+            let slt = document.querySelector('#mySelect');
+            let i = slt.selectedIndex;
+            if (i == 1) {
+                sys[0].innerHTML = "Poids (lbs)";
+                sys[1].innerHTML = "Taille (pouce)";
+            } else {
+                sys[0].innerHTML = "Poids (kgs)";
+                sys[1].innerHTML = "Taille (m)";
+            }
+        }
+
+        // tds[3].onclick = function() {
+        //     sys[0].innerHTML = "Poids (lbs)";
+        //     sys[1].innerHTML = "Taille (pouce)";
+        // }
+        // tds[2].onclick = function() {
+        //     sys[0].innerHTML = "Poids (kgs)";
+        //     sys[1].innerHTML = "Taille (m)";
+        // }
+
+        btn.onclick = function() {
+            let slt = document.querySelector('#mySelect');
+            let i = slt.selectedIndex;
+            console.log(i);
+            let imc = parseFloat(tds[0].value) /((parseFloat(tds[1].value) )** 2 );
+            if (i == 1) {
+                imc = parseFloat(tds[0].value) * 0.4536 /((parseFloat(tds[1].value) * 0.3048)** 2 );
+            }
+            
+            // console.log(imc);
+            imc = imc.toFixed(2);
+            rlt.innerHTML = imc;
+            
+        }
+
+        // slt.onselect = function() {
+
+        //     sys[0].innerHTML = "Poids (lbs)";
+        //     sys[1].innerHTML = "Taille (pouce)";
+        // }
+
+    </script>
 </body>
 </html>
