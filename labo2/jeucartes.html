@@ -88,15 +88,27 @@
             affichage()
         }
         }
-        window.setTimeout(console.log('timeout'), 3000)
+        window.setTimeout(fn, 3000)
+        function fn() {
+            console.log("timeout");
+        }
         // initial()
         // console.log(cartes);
         // console.log(cartes[0]);
+        // let t = null;
         function affichage() {
             for (i = 0; i < 52; i++) {
-                setTimeout(function(){
+                function fn() {
+                    console.log('time out');
+                }
+                window.setTimeout(fn, 200);
+                t = window.setInterval(fn(i), 2000);
+
+            function fn(i) {
                     imgs[i].src = "images/" +  carteschange[i] + ".jpg";
-                }, 0)
+                }
+
+            window.clearInterval(t)
             
         }
         }
