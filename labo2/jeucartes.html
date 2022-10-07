@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Jeu de cartes</h1>
-    <button id="brassage">Brassge</button>
+    <button id="brassage">Brassge</button><button id="init">Initialisation</button>
     <table>
         <tr>
             <td><img src="images/53.jpg" alt=""></td>
@@ -74,6 +74,7 @@
     </table>
     <script>
         let btnBrassage = document.querySelector("#brassage")
+        let btnInitial = document.querySelector("#init")
         let imgs = document.querySelectorAll('img')
         let cartes = [];
         let carteschange = [];
@@ -81,24 +82,29 @@
             for (let i = 1; i < 53; i++) {
             cartes.push(i);
             carteschange.push(i);
+            affichage()
         }
         }
-        
+        intial()
+        // console.log(cartes);
+        // console.log(cartes[0]);
         function affichage() {
             for (i = 0; i < 52; i++) {
             imgs[i].src = "images/" +  carteschange[i] + ".jpg"
         }
         }
-        affichage()
+        
         btnBrassage.addEventListener("click", brassage)
         function brassage () {
             for (i = 0, j = 26; i < 26; i++, j++) {
                 carteschange[i * 2] = cartes[i];
                 carteschange[i * 2 + 1] = cartes[j];
-
             }
             affichage()
+            cartes = carteschange
         }
+        btnInitial.addEventListener("click", intial)
+
         
         
     </script>
