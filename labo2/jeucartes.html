@@ -88,29 +88,19 @@
             affichage()
         }
         }
-        window.setTimeout(fn, 3000)
-        function fn() {
-            console.log("timeout");
-        }
-        // initial()
-        // console.log(cartes);
-        // console.log(cartes[0]);
-        // let t = null;
+        initial()
+     
+        let i = null;
         function affichage() {
-            for (i = 0; i < 52; i++) {
-                function fn() {
-                    console.log('time out');
+            let k = 0;
+            let timer = setInterval(function() {
+                if (k < 52) {
+                    imgs[k].src = "images/" +  carteschange[k] + ".jpg"; 
+                    k++;
+                } else {
+                    clearInterval(timer);
                 }
-                window.setTimeout(fn, 200);
-                t = window.setInterval(fn(i), 2000);
-
-            function fn(i) {
-                    imgs[i].src = "images/" +  carteschange[i] + ".jpg";
-                }
-
-            window.clearInterval(t)
-            
-        }
+            },20);
         }
         
         btnBrassage.addEventListener("click", brassage)
@@ -119,20 +109,13 @@
                 carteschange[i * 2] = cartes[i];
                 carteschange[i * 2 + 1] = cartes[j];
             }
-            console.log(cartes);
             affichage();
-            console.log(cartes);
-            console.log(carteschange);
             cartes = []
             for (let i = 0; i < 52; i++) {
                 cartes.push(carteschange[i]);
             }
-            console.log(cartes);
         }
-
-
         btnInitial.addEventListener("click", initial)
-
         
         
     </script>
