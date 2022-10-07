@@ -78,19 +78,26 @@
         let imgs = document.querySelectorAll('img')
         let cartes = [];
         let carteschange = [];
-        function intial() {
+        function initial() {
+            cartes = [];
+            carteschange = [];
             for (let i = 1; i < 53; i++) {
+            
             cartes.push(i);
             carteschange.push(i);
             affichage()
         }
         }
-        intial()
+        window.setTimeout(console.log('timeout'), 3000)
+        // initial()
         // console.log(cartes);
         // console.log(cartes[0]);
         function affichage() {
             for (i = 0; i < 52; i++) {
-            imgs[i].src = "images/" +  carteschange[i] + ".jpg"
+                setTimeout(function(){
+                    imgs[i].src = "images/" +  carteschange[i] + ".jpg";
+                }, 0)
+            
         }
         }
         
@@ -100,10 +107,19 @@
                 carteschange[i * 2] = cartes[i];
                 carteschange[i * 2 + 1] = cartes[j];
             }
-            affichage()
-            cartes = carteschange
+            console.log(cartes);
+            affichage();
+            console.log(cartes);
+            console.log(carteschange);
+            cartes = []
+            for (let i = 0; i < 52; i++) {
+                cartes.push(carteschange[i]);
+            }
+            console.log(cartes);
         }
-        btnInitial.addEventListener("click", intial)
+
+
+        btnInitial.addEventListener("click", initial)
 
         
         
