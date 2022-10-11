@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            float: left;
+            width: 92px;
+            height: 130px;
+            background-color: pink;
+            margin:0;
+            padding: 0;
+            border: none;
+            background: url(images/cartes.jpg) no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="brassage2">Brassge</button><button id="init2">Initialisation</button>
+    <table id="tb2">
+
+    </table>
+    <script>
+        let table2 = document.querySelector("#tb2");
+        for (let i = 0; i < 4; i++) {
+            let tr = document.createElement("tr");
+            let indexY = i * 130;
+            for (let j = 0; j < 13; j++) {
+                let indexX = j * 92;
+                console.log(indexX);
+                let td = document.createElement("td");
+                td.style.backgroundPositionY =  -indexY + 'px';
+                td.style.backgroundPositionX =  -indexX + "px";
+                console.log(td.style.backgroundPositionX);
+                console.log(td.style.backgroundPositionY);
+                tr.appendChild(td);
+            }
+            table2.appendChild(tr);
+        }
+    </script>
+</body>
+</html>
