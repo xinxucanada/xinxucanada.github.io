@@ -5,91 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-       
-        .cartes {
-            width: 100%;
-        }
-
-        .cartes li {
-            float: left;
-            height: 216px;
-            width: 35px;
-            list-style: none;
-            background: url(images/cartes1080.jpg) no-repeat;
-
-        }
-
-        .cartes li:hover {
-            float: left;
-            height: 216px;
-            width: 148px;
-            list-style: none;
-            background: url(images/cartes1080.jpg) no-repeat;
-
-        }
-        .cartes ul {
-            display: block;
-            width: 1080px;
-            height: 216px;
-            
-        }
-        li:nth-child(13) {
-            width: 159px;
-        }
-        
-
-    </style>
+    <link rel="stylesheet" href="jeu2.css">
+    
 </head>
 <body>
 
-    <button id="brassage2">Brassge</button><button id="init2">Initialisation</button>
-    <table id="tb2">
-
-    </table>
+    <button id="brassage2">Brassge</button>
+  
     <div class="cartes">
 
     </div>
 
-    <script>
-        let cartes = document.querySelector(".cartes");
-        // let table2 = document.querySelector("#tb2");
-        let listX = [];
-        let listY = [];
-        function initial() {
-            for (let i = 0; i < 4; i++) {
-            let ul = document.createElement("ul");
-            let indexY = i * 216;
-            for (let j = 0; j < 13; j++) {
-                let indexX = j * 148;
-                let li = document.createElement("li");
-                li.style.backgroundPositionY =  -indexY + 'px';
-                li.style.backgroundPositionX =  -indexX + "px";
-                listX.push(-indexX + "px");
-                listY.push(-indexY + "px");
-    
-                ul.appendChild(li);
-            }
-            cartes.appendChild(ul);
-            let br = document.createElement("br");
-            cartes.appendChild(br);
-            
-        }
-         
-        }
-
-        initial()
-
-        let init2 = document.querySelector("#init2");
-        init2.addEventListener("click", initial);
-        
-
-        
-
+    <script src="jeu2.js">    
     </script>
 </body>
 </html>

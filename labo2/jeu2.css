@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cartes {
+    width: 100%;
+}
+
+.cartes li {
+    float: left;
+    height: 216px;
+    width: 35px;
+    list-style: none;
+    background: url(images/cartes1080.jpg) no-repeat;
+
+}
+
+.cartes li:hover {
+    float: left;
+    height: 216px;
+    width: 148px;
+    list-style: none;
+    background: url(images/cartes1080.jpg) no-repeat;
+
+}
+.cartes ul {
+    display: block;
+    width: 1080px;
+    height: 216px;
+    
+}
+li:nth-child(13) {
+    width: 150px;
+}
+
