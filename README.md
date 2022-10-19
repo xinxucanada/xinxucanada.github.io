@@ -5,7 +5,7 @@ Travaux sur programation Web
 
 ## Description
 
-Inclue labo1,2,3, projet continue, project final
+Inclue labo1,2 projet continue, project final
 
 ## Utilisation
 
