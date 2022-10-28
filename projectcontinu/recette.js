@@ -3,8 +3,8 @@ let video_choix = document.querySelector("#recettes");
         var player;
         function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '360',
-          width: '640',
+          height: '800',
+          width: '400',
         //   videoId: video_choix,
           videoId: video_choix.value,
           events: {
